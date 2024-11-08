@@ -1,0 +1,149 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+#main {
+  height: 100%;
+  width: 100%;
+}
+
+#nav {
+  width: 100%;
+  height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 30px;
+  font-size: 18px;
+  padding: 0 30px;
+  /* background-color: red; */
+}
+
+#nav h4 {
+  font-weight: 500;
+}
+
+#nav i {
+  font-weight: 500;
+  padding: 14px;
+  background-color: black;
+  color: white;
+  border-radius: 50%;
+}
+
+#hero {
+  height: auto;
+  /* background-color: orange; */
+  padding: 28px 80px;
+  width: 100%;
+}
+
+#hero h1 {
+  margin-top: 20px;
+  font-weight: 400;
+  font-size: 9vh;
+  width: 40%;
+  line-height: 1.1;
+}
+
+#description {
+  height: auto;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 40% 60%;
+}
+
+#description p {
+  padding: 20px 80px;
+  line-height: 1.6;
+  font-weight: 500;
+}
+
+#description #right {
+  padding: 20px 80px;
+  /* background-color: orange; */
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+#items {
+  width: 55%;
+  justify-self: left;
+  border-top: 2px solid black;
+  padding: 18px;
+  display: flex;
+  justify-content: space-between;
+}
+#items a {
+  text-decoration: none;
+  color: black;
+  font-size: 24px;
+}
+#items i {
+  font-size: 30px;
+  opacity: 0;
+}
+
+#items:hover i {
+  opacity: 1;
+}
+#items:hover {
+  opacity: 1;
+  background-color: #e9e9e9;
+}
+#items:hover a {
+  text-decoration: underline;
+}
+
+#bottom {
+  width: 100%;
+  height: 36%;
+  display: flex;
+  justify-content: space-evenly;
+}
+#bottom img {
+  width: 40%;
+  background-size: cover;
+  background-position: center;
+}
+
+@media (max-width: 600px) {
+  #hero {
+    height: auto;
+    padding: 28px 60px;
+    width: 100%;
+  }
+
+  #hero h1 {
+    width: 100%;
+    padding-left: 25px;
+  }
+
+  #description {
+    grid-template-columns: 100%;
+    padding-left: 25px;
+  }
+
+  #description p {
+    padding: 20px 60px;
+    margin-bottom: 2rem;
+  }
+
+  #description #right {
+    padding: 20px 60px;
+    margin-bottom: 2rem;
+  }
+
+  #items {
+    width: 100%;
+  }
+
+  #bottom img {
+    width: 80%;
+  }
+}
