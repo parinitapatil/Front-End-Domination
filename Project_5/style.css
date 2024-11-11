@@ -1,0 +1,108 @@
+@font-face {
+  font-family: "Gilroy";
+  src: url(/Project_1/gilroy/Gilroy-Regular.ttf);
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Gilroy", sans-serif;
+}
+html,
+body {
+  height: 100%;
+  width: 100%;
+}
+#main {
+  height: 100%;
+  width: 100%;
+  background-color: #f8f8f8;
+  position: relative;
+  padding-top: 1px;
+}
+#nav {
+  height: 11vh;
+  width: 100%;
+  /* background-color: bisque; */
+  margin-top: 30px;
+  border-top: 2.5px solid;
+  border-bottom: 2.5px solid;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+#nav h1 {
+  height: 100%;
+  width: 20%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "monument";
+  font-size: 4vh;
+  display: flex;
+  flex-direction: column;
+  line-height: 0.9;
+
+  /* font-weight: ; */
+}
+#nav h1 div {
+  font-size: 2.5vh;
+  margin-right: -17%;
+}
+#nav h2 {
+  /* background-color: blue; */
+  font-size: 2.6vh;
+  height: 100%;
+  width: 25%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-right: 2.5px solid black;
+}
+
+#nav h2:nth-last-child(1) {
+  width: 10%;
+  border-right: none;
+  /* background-color: red; */
+}
+
+#center {
+  /* background-color: antiquewhite; */
+  height: 84vh;
+  width: 1005;
+  padding: 4vw;
+}
+#content {
+  /* background-color: aqua; */
+  height: 100%;
+  width: 100%;
+  position: relative;
+}
+#content video {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+#overlay {
+  height: 40%;
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  color: white;
+  margin-left: 3.5vw;
+  /* background-color: red; */
+}
+#over-1{
+  
+}
+#over-1 h1{
+  font-size: 7vh;
+  font-family: "monument";
+}
+#over-2{
+  width: 90%;
+}
+#over-3{
+  display: flex;
+  justify-content: space-between;
+}
