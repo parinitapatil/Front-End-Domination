@@ -84,7 +84,7 @@ body {
   object-fit: cover;
 }
 #overlay {
-  height: 40%;
+  height: 50%;
   width: 100%;
   position: absolute;
   bottom: 0;
@@ -92,17 +92,40 @@ body {
   margin-left: 3.5vw;
   /* background-color: red; */
 }
-#over-1{
-  
-}
 #over-1 h1{
   font-size: 7vh;
   font-family: "monument";
+  padding-bottom: 20px;
+  mix-blend-mode: difference;
 }
 #over-2{
   width: 90%;
 }
 #over-3{
+  width: 90%;
   display: flex;
   justify-content: space-between;
+  align-items: center;
+  padding-top: 5px;
+}
+#over-3 img{
+  width: 55px;
+}
+#scroll{
+  height: 40vh;
+  width: 100%;
+  background-color: palegreen;
+  white-space: nowrap;
+}
+#container{
+  height: 100%;
+  width: 100%;
+  display: inline-block;
+}
+#scroll img{
+  /* display: none; */
+  height: 70%;
+  border-radius: 50%;
+  width: 14.5%;
+  object-position: top;
 }
