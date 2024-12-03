@@ -2,6 +2,8 @@ const scissor = document.querySelector('.scissor');
 const rock = document.querySelector('.rock');
 const paper = document.querySelector('.paper');
 let a = '';
+let userscore = 0;
+let computerscore = 0;
 scissor.addEventListener('click', () => playGame('scissor'));
 rock.addEventListener('click', () => playGame('rock'));
 paper.addEventListener('click', () => playGame('paper'));
@@ -26,13 +28,15 @@ function playGame(userchoice) {
 // match choices
 function matchChoices(user, computer) {
     if (user === computer) {
-        return 'Tie'
+        return `Tie 😐\nYour Score:${userscore} Computer Score:${computerscore}`
     }
     if ((user === 'rock' && computer === 'scissor') || (user === 'paper' && computer === 'rock') || (user === 'scissor' && computer === 'paper')){
-        return 'You win'
+        userscore++;
+        return `You Win 🎉⭐\nYour Score : ${userscore} Computer Score : ${computerscore}`;
     }
     else {
-        return 'You Lose'
+        computerscore++;
+        return `You Lose 😕\nYour Score : ${userscore} Computer Score : ${computerscore}`;
     }
 }
 // win lose tie
