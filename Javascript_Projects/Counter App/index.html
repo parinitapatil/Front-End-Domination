@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Counter App</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="/Javascript_Projects/Counter App/style.css">
+  </head>
+  <body class="flex items-center justify-center min-h-screen">
+    <div class="conatiner w-96 flex flex-col items-center justify-center  bg-orange-400 rounded-xl p-1">
+      <h1 class="text-center text-3xl font-medium m-10">Counter App 🔢</h1>
+      <h1 class="count font-medium text-6xl pb-8">0</h1>
+      <div class="flex justify-between gap-4 pb-7">
+        <button class="increase text-5xl  text-white py-2 px-1 rounded-md hover:bg-indigo-600">⬆️</button>
+        <button class="decrease text-5xl  text-white py-2 px-1 rounded-md hover:bg-indigo-600">⬇️</button>
+      </div>
+      <label for="steps" class="steps text-lg pb-10 font-medium">Steps: <input class="rounded p-2 " type="number"></label>
+      <button class="reset mb-10 text-xl bg-indigo-400 text-white py-2 px-4 rounded-md hover:bg-indigo-600">Reset</button>
+    </div>
+    <script src="app.js"></script>
+  </body>
+</html>
