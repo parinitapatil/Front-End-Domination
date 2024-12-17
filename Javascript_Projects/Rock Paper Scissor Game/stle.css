@@ -1,0 +1,87 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins',sans-serif;
+}
+
+body{
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+#game{
+    display: flex;
+    margin-bottom: 2px;
+    text-align: center;
+}
+#game #player,#computer{
+    padding: 30px;
+}
+#game h2{
+    margin-bottom: 30px;
+}
+
+#game img{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 30px 50px;
+    cursor: pointer;
+    transition:transform ease-in 0.3s ;
+}
+
+#game img:hover{
+    transform: translate(20px,20px);
+}
+
+#game #computer img{
+    transition:transform ease-in 0.3s ;
+}
+#game #computer img:hover{
+    transform: translate(-20px,20px);
+}
+
+img{
+    width: 100px;
+}
+
+#result{
+    font-weight: 600;
+    margin: 18px;
+    font-size: 22px;
+}
+#scoreboard{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 30px;
+    font-size: 18px;
+    gap: 50px;
+    border: 2px solid;
+    padding: 10px;
+}
+#scoreboard #your_score,#computer_score{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+h5{
+    margin-top: 12px;
+    font-size: 20px;
+    text-align: center;
+}
+
+button{
+    padding: 10px 12px;
+    font-size: 18px;
+    font-weight: 600;
+    background-color: palevioletred;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
